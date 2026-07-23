@@ -44,25 +44,13 @@ public class PhilippineFlagApp extends Application {
         sun.setFill(Color.web("#FCD116"));
 
         // 8 sun rays
-        Pane rays = new Pane();
-        for (int i = 0; i < 8; i++) {
-            double angle = Math.toRadians(i * 45);
-            double innerR = sunRadius + 5;
-            double outerR = sunRadius + 25;
-            Line ray = new Line(
-                    sunX + innerR * Math.cos(angle), sunY + innerR * Math.sin(angle),
-                    sunX + outerR * Math.cos(angle), sunY + outerR * Math.sin(angle)
-            );
-            ray.setStroke(Color.web("#FCD116"));
-            ray.setStrokeWidth(3);
-            rays.getChildren().add(ray);
-        }
+        Pane rays = createSunRays(sunX, sunY, sunRadius, 25);
 
         // 3 stars at triangle corners (simplified as small circles — replace with Polygon star if required)
-        double starRadius = 8;
-        Circle star1 = new Circle(20, 20, starRadius, Color.web("#FCD116"));
-        Circle star2 = new Circle(20, HEIGHT - 20, starRadius, Color.web("#FCD116"));
-        Circle star3 = new Circle(triangleWidth - 20, HEIGHT / 2, starRadius, Color.web("#FCD116"));
+        double starRadius = 10;
+        Polygon star1 = createStar(20, 20, starRadius);
+        Polygon star2 = createStar(20, HEIGHT - 20, starRadius);
+        Polygon star3 = createStar(triangleWidth - 20, HEIGHT / 2, starRadius);
 
         root.getChildren().addAll(blueStripe, redStripe, triangle, sun, rays, star1, star2, star3);
 
