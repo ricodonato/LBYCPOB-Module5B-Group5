@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.Polygon?>
+<AnchorPane prefHeight="300.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/25"
+            xmlns:fx="http://javafx.com/fxml/1">
+
+    <!-- Blue stripe (top half) -->
+    <Rectangle x="0" y="0" width="600" height="150" fill="#0038A8" />
+
+    <!-- Red stripe (bottom half) -->
+    <Rectangle x="0" y="150" width="600" height="150" fill="#CE1126" />
+
+    <!-- White equilateral triangle (left side) -->
+    <Polygon points="0,0, 0,300, 259.81,150" fill="WHITE" />
+
+    <fx:include fx:id="sunGraphic" source="sun.fxml" layoutX="-56.4" layoutY="-11.0" />
+
+    <!-- 3 stars, rotated to point outward from triangle center -->
+    <fx:include fx:id="star1" source="star.fxml" layoutX="6" layoutY="25" rotate="-29.27" />
+    <fx:include fx:id="star2" source="star.fxml" layoutX="6" layoutY="235" rotate="209.27" />
+    <fx:include fx:id="star3" source="star.fxml" layoutX="188" layoutY="130" rotate="90.0" />
+
+</AnchorPane>
