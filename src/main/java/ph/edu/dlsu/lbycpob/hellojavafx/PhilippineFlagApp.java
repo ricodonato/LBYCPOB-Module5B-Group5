@@ -47,15 +47,15 @@ public class PhilippineFlagApp extends Application {
         Pane rays = createSunRays(sunX, sunY, sunRadius, 25);
 
         // 3 stars at triangle corners (simplified as small circles — replace with Polygon star if required)
-        double starRadius = 10;
-        Polygon star1 = createStar(20, 20, starRadius);
-        Polygon star2 = createStar(20, HEIGHT - 20, starRadius);
-        Polygon star3 = createStar(triangleWidth - 20, HEIGHT / 2, starRadius);
+        double starRadius = 12;
+        Polygon star1 = createStar(25, 40, starRadius);
+        Polygon star2 = createStar(25, HEIGHT - 40, starRadius);
+        Polygon star3 = createStar(triangleWidth - 50, HEIGHT / 2, starRadius);
 
         root.getChildren().addAll(blueStripe, redStripe, triangle, sun, rays, star1, star2, star3);
 
         Scene scene = new Scene(root, WIDTH, HEIGHT);
-        primaryStage.setTitle("Philippine Flag - PhilippineFlagApp");
+        primaryStage.setTitle("Philippine Flag - PhilippineFlagApp Group5");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
