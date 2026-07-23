@@ -5,4 +5,5 @@
             xmlns:fx="http://javafx.com/fxml/1">
     <!-- #TODO: Put the flag components here -->
     <fx:include source="sun.fxml" layoutX="0" layoutY="0" />
+    <fx:include source="star.fxml" layoutX="0" layoutY="0" />
 </AnchorPane>
