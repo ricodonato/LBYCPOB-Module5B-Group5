@@ -1,36 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.geometry.Insets?>
 
-<GridPane hgap="12" vgap="12" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
-    <padding>
-        <Insets top="15" right="15" bottom="15" left="15"/>
-    </padding>
+<?import javafx.scene.layout.*?>
 
-    <fx:include source="flag.fxml" scaleX="0.15" scaleY="0.15" GridPane.rowIndex="0" GridPane.columnIndex="0" />
-    <fx:include source="flag.fxml" scaleX="0.15" scaleY="0.15" GridPane.rowIndex="0" GridPane.columnIndex="1" />
-    <fx:include source="flag.fxml" scaleX="0.15" scaleY="0.15" GridPane.rowIndex="0" GridPane.columnIndex="2" />
-    <fx:include source="flag.fxml" scaleX="0.15" scaleY="0.15" GridPane.rowIndex="0" GridPane.columnIndex="3" />
-    <fx:include source="flag.fxml" scaleX="0.15" scaleY="0.15" GridPane.rowIndex="0" GridPane.columnIndex="4" />
-    <fx:include source="flag.fxml" scaleX="0.15" scaleY="0.15" GridPane.rowIndex="1" GridPane.columnIndex="0" />
-    <fx:include source="flag.fxml" scaleX="0.15" scaleY="0.15" GridPane.rowIndex="1" GridPane.columnIndex="1" />
-    <fx:include source="flag.fxml" scaleX="0.15" scaleY="0.15" GridPane.rowIndex="1" GridPane.columnIndex="2" />
-    <fx:include source="flag.fxml" scaleX="0.15" scaleY="0.15" GridPane.rowIndex="1" GridPane.columnIndex="3" />
-    <fx:include source="flag.fxml" scaleX="0.15" scaleY="0.15" GridPane.rowIndex="1" GridPane.columnIndex="4" />
-    <fx:include source="flag.fxml" scaleX="0.15" scaleY="0.15" GridPane.rowIndex="2" GridPane.columnIndex="0" />
-    <fx:include source="flag.fxml" scaleX="0.15" scaleY="0.15" GridPane.rowIndex="2" GridPane.columnIndex="1" />
-    <fx:include source="flag.fxml" scaleX="0.15" scaleY="0.15" GridPane.rowIndex="2" GridPane.columnIndex="2" />
-    <fx:include source="flag.fxml" scaleX="0.15" scaleY="0.15" GridPane.rowIndex="2" GridPane.columnIndex="3" />
-    <fx:include source="flag.fxml" scaleX="0.15" scaleY="0.15" GridPane.rowIndex="2" GridPane.columnIndex="4" />
-    <fx:include source="flag.fxml" scaleX="0.15" scaleY="0.15" GridPane.rowIndex="3" GridPane.columnIndex="0" />
-    <fx:include source="flag.fxml" scaleX="0.15" scaleY="0.15" GridPane.rowIndex="3" GridPane.columnIndex="1" />
-    <fx:include source="flag.fxml" scaleX="0.15" scaleY="0.15" GridPane.rowIndex="3" GridPane.columnIndex="2" />
-    <fx:include source="flag.fxml" scaleX="0.15" scaleY="0.15" GridPane.rowIndex="3" GridPane.columnIndex="3" />
-    <fx:include source="flag.fxml" scaleX="0.15" scaleY="0.15" GridPane.rowIndex="3" GridPane.columnIndex="4" />
-    <fx:include source="flag.fxml" scaleX="0.15" scaleY="0.15" GridPane.rowIndex="4" GridPane.columnIndex="0" />
-    <fx:include source="flag.fxml" scaleX="0.15" scaleY="0.15" GridPane.rowIndex="4" GridPane.columnIndex="1" />
-    <fx:include source="flag.fxml" scaleX="0.15" scaleY="0.15" GridPane.rowIndex="4" GridPane.columnIndex="2" />
-    <fx:include source="flag.fxml" scaleX="0.15" scaleY="0.15" GridPane.rowIndex="4" GridPane.columnIndex="3" />
-    <fx:include source="flag.fxml" scaleX="0.15" scaleY="0.15" GridPane.rowIndex="4" GridPane.columnIndex="4" />
+<AnchorPane prefHeight="300" prefWidth="500" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
 
-</GridPane>
+    <GridPane fx:id="flagGrid" hgap="6" layoutX="-239.0" layoutY="-104.0" vgap="6">
+        <columnConstraints>
+            <ColumnConstraints hgrow="NEVER" maxWidth="90" minWidth="90" prefWidth="90" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="90" minWidth="90" prefWidth="90" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="90" minWidth="90" prefWidth="90" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="90" minWidth="90" prefWidth="90" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="90" minWidth="90" prefWidth="90" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="45.6" minHeight="45.0" prefHeight="45.6" vgrow="NEVER" />
+            <RowConstraints maxHeight="45.599999999999994" minHeight="45.0" prefHeight="45.599999999999994" vgrow="NEVER" />
+            <RowConstraints maxHeight="45.0" minHeight="45.0" prefHeight="45.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="45.0" minHeight="45.0" prefHeight="45.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="45.0" minHeight="45.0" prefHeight="45.0" vgrow="NEVER" />
+        </rowConstraints>
+
+        <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90" GridPane.columnIndex="0" GridPane.rowIndex="0">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+        <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90" GridPane.columnIndex="1" GridPane.rowIndex="0">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+        <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90" GridPane.columnIndex="2" GridPane.rowIndex="0">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+        <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90" GridPane.columnIndex="3" GridPane.rowIndex="0">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+        <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90" GridPane.columnIndex="4" GridPane.rowIndex="0">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+        <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90" GridPane.columnIndex="0" GridPane.rowIndex="1">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+        <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+        <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+        <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90" GridPane.columnIndex="3" GridPane.rowIndex="1">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+        <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90" GridPane.columnIndex="4" GridPane.rowIndex="1">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+        <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90" GridPane.columnIndex="0" GridPane.rowIndex="2">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+        <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+        <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+        <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90" GridPane.columnIndex="3" GridPane.rowIndex="2">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+        <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90" GridPane.columnIndex="4" GridPane.rowIndex="2">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+        <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90" GridPane.columnIndex="0" GridPane.rowIndex="3">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+        <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+        <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90" GridPane.columnIndex="2" GridPane.rowIndex="3">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+        <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90" GridPane.columnIndex="3" GridPane.rowIndex="3">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+        <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90" GridPane.columnIndex="4" GridPane.rowIndex="3">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+        <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90" GridPane.columnIndex="0" GridPane.rowIndex="4">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+        <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90" GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+        <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90" GridPane.columnIndex="2" GridPane.rowIndex="4">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+        <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90" GridPane.columnIndex="3" GridPane.rowIndex="4">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+        <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90" GridPane.columnIndex="4" GridPane.rowIndex="4">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+
+    </GridPane>
+
+</AnchorPane>
