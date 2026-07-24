@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="450" prefWidth="550" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+
+    <AnchorPane layoutX="-223.0" layoutY="-118.0" prefHeight="384" prefWidth="384" fx:id="xPattern">
+
+        <!-- Main diagonal (top-left to bottom-right) -->
+        <Pane layoutX="0" layoutY="0" maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+        <Pane layoutX="96" layoutY="96" maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+        <Pane layoutX="192" layoutY="192" maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+        <Pane layoutX="288" layoutY="288" maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+        <Pane layoutX="384" layoutY="384" maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+
+        <!-- Anti-diagonal (top-right to bottom-left) -->
+        <Pane layoutX="384" layoutY="0" maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+        <Pane layoutX="288" layoutY="96" maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+        <Pane layoutX="96" layoutY="288" maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+        <Pane layoutX="0" layoutY="384" maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90">
+            <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+        </Pane>
+
+    </AnchorPane>
+
+</AnchorPane>
