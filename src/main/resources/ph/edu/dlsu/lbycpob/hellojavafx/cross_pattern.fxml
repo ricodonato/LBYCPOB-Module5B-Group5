@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400" prefWidth="500" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+
+    <BorderPane fx:id="crossPattern" layoutX="-190.0" layoutY="-29.0" prefHeight="198" prefWidth="378">
+
+        <top>
+            <HBox alignment="CENTER" spacing="6" BorderPane.alignment="CENTER">
+                <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90">
+                    <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+                </Pane>
+                <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90">
+                    <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+                </Pane>
+            </HBox>
+        </top>
+
+        <center>
+            <VBox alignment="CENTER" spacing="6" BorderPane.alignment="CENTER">
+                <HBox alignment="CENTER" spacing="6">
+                    <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90">
+                        <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+                    </Pane>
+                    <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90">
+                        <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+                    </Pane>
+                    <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90">
+                        <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+                    </Pane>
+                    <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90">
+                        <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+                    </Pane>
+                </HBox>
+                <HBox alignment="CENTER" spacing="6">
+                    <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90">
+                        <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+                    </Pane>
+                    <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90">
+                        <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+                    </Pane>
+                    <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90">
+                        <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+                    </Pane>
+                    <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90">
+                        <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+                    </Pane>
+                </HBox>
+            </VBox>
+        </center>
+
+        <bottom>
+            <HBox alignment="CENTER" spacing="6" BorderPane.alignment="CENTER">
+                <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90">
+                    <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+                </Pane>
+                <Pane maxHeight="45" maxWidth="90" minHeight="45" minWidth="90" prefHeight="45" prefWidth="90">
+                    <fx:include scaleX="0.15" scaleY="0.15" source="flag.fxml" />
+                </Pane>
+            </HBox>
+        </bottom>
+
+    </BorderPane>
+
+</AnchorPane>
